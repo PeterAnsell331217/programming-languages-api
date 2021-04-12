@@ -17,3 +17,7 @@ app.get('/', (req, res) => {
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`)
 });
+
+app.get('/petersSillyRoute', (req, res) => {
+  res.json({'message': 'You called petersSillyRoute' })
+});
